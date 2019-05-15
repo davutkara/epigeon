@@ -1,0 +1,50 @@
+<center>
+    <a href="/logout" class="mo"><button class="button-black button-outline"> Logout </button></a>
+</center>
+
+<hr />
+
+<div class="row">
+    <div class="column">
+        <h3>Add new link</h3>
+        <form>
+            <fieldset>
+                <label for="nameField">Until..</label>
+                <input type="text" placeholder="Link will be remove after X days" id="nameField">
+                <label for="ageRangeField">Tracker type</label>
+                <select id="ageRangeField">
+                    <option value="hidden">Hidden</option>
+                    <option value="viewer">Image with viewer counter</option>
+                    <option value="reader">Image with viewer counter and reader counter</option>
+                </select>
+                <label for="commentField">Label <small>optional</small></label>
+                <input type="text" placeholder="name your link" id="nameField">
+                <input class="button-primary" type="submit" value="Send">
+            </fieldset>
+        </form>
+    </div>
+    <div class="column column-50 column-offset-10">
+        <h3>Active links</h3>
+        <table>
+            <thead>
+                <tr>
+
+                    <th>Creation date</th>
+                    <th>Day left</th>
+                    <th>Reader</th>
+                    <th>Viewer</th>
+                    <th>code</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each links}}
+                <tr>
+                    <td>{{this.date}}</td>
+                    <td>{{this.date}}</td>
+                    <td>{{this.read}}</td>
+                    <td>{{this.view}}</td>
+                    <td><button>Open</button></td>
+                </tr> {{/each}} </tbody>
+        </table>
+    </div>
+</div>

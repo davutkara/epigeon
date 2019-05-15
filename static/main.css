@@ -1,0 +1,57 @@
+#head {
+  text-align: center;
+  background: #fffcf8;
+  padding: 1em 0;
+}
+
+.mo {
+  margin: 0 auto;
+}
+
+.seperate {
+  padding: 2em 0;
+}
+
+/* Larger than mobile screen */
+@media (min-width: 40rem) {
+  #head svg {
+    max-width: 15%;
+  }
+}
+
+/* Larger than tablet screen */
+@media (min-width: 80rem) {
+}
+
+/* Larger than desktop screen */
+@media (min-width: 120rem) {
+}
+
+/* Custom color */
+.button-black {
+  background-color: black;
+  border-color: black;
+}
+.button-black.button-clear,
+.button-black.button-outline {
+  background-color: transparent;
+  color: black;
+}
+.button-black.button-clear {
+  border-color: transparent;
+}
+
+/* Custom size */
+.button-small {
+  font-size: 0.8rem;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  padding: 0 1.5rem;
+}
+
+.button-large {
+  font-size: 1.4rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  padding: 0 2rem;
+}

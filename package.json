@@ -1,0 +1,38 @@
+{
+  "name": "epigeon",
+  "version": "1.0.0",
+  "description": "Simple mail tracking ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davutkara/epigeon.git"
+  },
+  "keywords": [
+    "mail",
+    "tracking",
+    "read"
+  ],
+  "author": "Davut KARA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davutkara/epigeon/issues"
+  },
+  "homepage": "https://github.com/davutkara/epigeon#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-ensure-login": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.16.1",
+    "firebase": "^6.0.2",
+    "github-api": "^3.2.0",
+    "js-sha256": "^0.9.0",
+    "passport": "^0.4.0",
+    "passport-github": "^1.1.0"
+  }
+}
